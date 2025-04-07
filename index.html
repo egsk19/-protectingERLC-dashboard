@@ -109,8 +109,8 @@
 
           if (response.ok) {
             const data = await response.json();
-            responseDiv.textContent = `✅ Success!\nResponse: ${JSON.stringify(data)}`;
-            responseDiv.className = "success";
+            responseDiv.textContent = `✅ Success!\n $JSON.stringify(data)`;
+            responseDiv.className =
           } else {
             const errorText = await response.text();
             responseDiv.textContent = `❌ Error ${response.status}: ${errorText}`;
